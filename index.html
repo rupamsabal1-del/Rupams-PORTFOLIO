@@ -1,1 +1,22 @@
-{\n  "particles": {\n    "number": {\n      "value": 100,\n      "density": {\n        "enable": true,\n        "value_area": 800\n      }\n    },\n    "color": {\n      "value": ["#00bfff"]\n    },\n    \"line_linked\": {\n      \"enable\": true,\n      \"distance\": 150,\n      \"color\": \"#00bfff\",\n      \"opacity\": 0.4,\n      \"width\": 1\n    },\n    "move": {\n      "enable": true,\n      "speed": 6,\n      "direction": "none",\n      "random": false,\n      "straight": false,\n      "out_mode": "out",\n      "attract": {\n        "enable": false,\n        "rotateX": 600,\n        "rotateY": 1200\n      }\n    }\n  }\n}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects and skills!</p>
+    </div>
+</body>
+</html>
