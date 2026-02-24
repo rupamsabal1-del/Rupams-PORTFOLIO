@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RUPAM | Minecraft Developer</title>
+<title>RUPAM | Minecraft & Discord Bot Developer</title>
 
 <style>
 :root{
@@ -80,18 +80,33 @@ nav a:hover{
     z-index:1001;
 }
 
-/* Sections */
+/* Header */
 header{
     text-align:center;
-    padding:130px 20px 80px 20px;
+    padding:140px 20px 80px 20px;
 }
 
 header h1{
-    font-size:52px;
+    font-size:55px;
     margin:0;
-    text-shadow:0 0 20px var(--primary);
+    animation: glow 2s infinite alternate;
 }
 
+@keyframes glow{
+    from{ text-shadow:0 0 10px var(--primary); }
+    to{ text-shadow:0 0 30px var(--primary),0 0 60px var(--primary); }
+}
+
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+header button{
+    margin-top:25px;
+}
+
+/* Sections */
 section{
     padding:40px 20px;
     text-align:center;
@@ -177,21 +192,27 @@ footer{
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a </a>
 </nav>
 
 <button class="toggle-btn" onclick="toggleMode()">Mode</button>
 
 <header id="home">
     <h1>RUPAM</h1>
-    <p>Premium Minecraft Server Developer</p>
+    <p>Premium Minecraft Developer & Advanced Discord Bot Creator</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">
+        Hire Me
+    </button>
 </header>
 
 <section>
 
 <div class="card" id="about">
     <h2>About Me</h2>
-    <p>Professional Minecraft Developer with 3 years of experience in server setup, rank systems, and Minecraft store website development.</p>
+    <p>
+Professional Minecraft & Discord Bot Developer with 3+ years of experience.
+I create high-performance Minecraft servers, custom rank systems, and advanced Discord bots with moderation, economy, ticket system, logging, verification & automation.
+    </p>
 </div>
 
 <div class="card">
@@ -202,8 +223,12 @@ footer{
             Years Experience
         </div>
         <div class="stat-box">
-            <div class="stat-number" data-target="20">0</div>
-            Projects Done
+            <div class="stat-number" data-target="22">0</div>
+            Servers Setup
+        </div>
+        <div class="stat-box">
+            <div class="stat-number" data-target="13">0</div>
+            Discord Bots Created
         </div>
         <div class="stat-box">
             <div class="stat-number" data-target="100">0</div>
@@ -214,24 +239,32 @@ footer{
 
 <div class="card" id="services">
     <h2>Services</h2>
-    <p>✔ Full Server Setup</p>
-    <p>✔ Rank Configuration</p>
-    <p>✔ Custom GUI & Shop</p>
-    <p>✔ Minecraft Rank Store Website</p>
+    <p>✔ Full Minecraft Server Setup (Paper/Spigot)</p>
+    <p>✔ Rank & Permissions Configuration</p>
+    <p>✔ Custom GUI & Shop System</p>
+    <p>✔ Minecraft Store Website</p>
+    <br>
+    <p>✔ Custom Discord Bot Development</p>
+    <p>✔ Moderation Bot</p>
+    <p>✔ Economy Bot</p>
+    <p>✔ Ticket System Bot</p>
+    <p>✔ Verification System</p>
+    <p>✔ Auto Role & Logging System</p>
 </div>
 
 <div class="card" id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <p>Discord: @kj_offline_busy</p>
+    <p>Available for Minecraft Server Setup & Discord Bot Development</p>
     <button onclick="window.open('https://discord.com')">
-        Contact on Discord
+        Contact Me
     </button>
 </div>
 
 </section>
 
 <footer>
-© 2026 RUPAM | Ultimate Minecraft Developer
+© 2026 RUPAM | Minecraft & Discord Bot Developer
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -245,7 +278,7 @@ particlesJS("particles-js",{
     line_linked:{
       enable:true,
       distance:140,
-      color:"#00bfff"
+      color="#00bfff"
     }
   }
 });
